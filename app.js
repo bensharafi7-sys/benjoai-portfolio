@@ -20,7 +20,7 @@ const F=[
  {k:'video',t:'אפרתושקה: המשחק',d:'סרטון קצר שמציג את המשחק.',f:'efratushka-game-stars'}]},
 {id:'chars',t:'דמויות',ico:'✨',cov:['assets/img/efratushka.webp','assets/img/zumi.webp','assets/img/benjo.webp'],items:[
  {k:'pic',t:'אפרתושקה',d:'הדמות הראשית של משחק וקליפ אפרתושקה.',img:'assets/img/efratushka.webp'},
- {k:'pic',t:'זומי',d:'הדביבון השובב מעולם אפרתושקה.',img:'assets/img/zumi.webp'},
+ {k:'pic',t:'זומי בומי',d:'החבר של אפרתושקה על הבמה.',img:'assets/img/zumi.webp'},
  {k:'pic',t:'Benjo',d:'דמות תלת־ממד של בן למשחק BENJO IN ISTANBUL.',img:'assets/img/benjo.webp'},
  {k:'pic',t:'הסבתא ממגדל אור',d:'דמות מונפשת מהמשחק של מינימרקט אור.',img:'assets/img/granny.webp'}]}];
 const g=document.getElementById('grid');
