@@ -6,8 +6,7 @@ const F=[
  {k:'game',t:'אפרתושקה: מסיבת הקסם',d:'משחק דפדפן צבעוני לילדים, עם עולמות, חברי קסם וחנות כוכבים.',img:'assets/poster/game-efratushka.jpg',u:'https://bensharafi7-sys.github.io/efratushka-game/'},
  {k:'game',t:'מגדל אור, מבית מינימרקט אור',d:'משחקים ממותגים לסופרמרקט שכונתי, בצבעים ובלוגו של העסק.',img:'assets/poster/game-minimarket.jpg',u:'https://bensharafi7-sys.github.io/minimarket-or/'},
  {k:'game',t:'BENJO IN ISTANBUL',d:'משימה 01: דמו של משחק הרפתקאות עם דמות בהשראת בן.',img:'assets/poster/game-honor.jpg',u:'https://bensharafi7-sys.github.io/benjo-honor/'}]},
-{id:'songs',t:'שירים אישיים',ico:'🎵',cov:['assets/poster/minimarket-or-v2.jpg'],items:[
- {k:'audio',t:'ג׳ינגל למינימרקט אור',d:'"מינימרקט אור, הכל קרוב, הכל באור". ג׳ינגל מקורי לעסק.',src:'assets/audio/jingle-minimarket-or.mp3'}],soon:true},
+{id:'songs',t:'שירים אישיים',ico:'🎵',cov:[],items:[],soon:true},
 {id:'videos',t:'סרטוני AI',ico:'🎬',cov:['assets/poster/efratushka-clip.jpg','assets/poster/aceaf-trailer-v1.jpg','assets/poster/bedtime-story.jpg'],items:[
  {k:'video',t:'אפרתושקה: קליפ',d:'קליפ אנימציה מלא לדמות אפרתושקה.',f:'efratushka-clip'},
  {k:'video',t:'Ace-Af: טריילר',d:'טריילר קולנועי לשיר.',f:'aceaf-trailer-v1'},
@@ -15,7 +14,6 @@ const F=[
  {k:'video',t:'יום הולדת מסבתא',d:'ברכת יום הולדת מרגשת בסגנון קולנועי.',f:'birthday-grandma'},
  {k:'video',t:'הסיפור של סבתא',d:'סרטון זיכרון אישי.',f:'grandma-story-v2'},
  {k:'video',t:'מינימרקט אור: פרסומת',d:'סרטון פרסומת לעסק עם המשחק הממותג.',f:'minimarket-or-v2'},
- {k:'video',t:'משחק לעסק: רילס',d:'רילס שמציג משחק ממותג לבית קפה.',f:'biz-game-reel'},
  {k:'video',t:'גיבור העסק',d:'סרטון תדמית למשחק ממותג.',f:'business-hero-v4'},
  {k:'video',t:'אפרתושקה: המשחק',d:'סרטון קצר שמציג את המשחק.',f:'efratushka-game-stars'}]},
 {id:'chars',t:'דמויות',ico:'✨',cov:['assets/img/efratushka.webp','assets/img/zumi.webp','assets/img/benjo.webp'],items:[
