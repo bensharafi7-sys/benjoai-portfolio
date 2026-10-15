@@ -4,8 +4,7 @@ const M='https://bensharafi7-sys.github.io/benjoai-media/';
 const F=[
 {id:'games',t:'משחקים ממותגים',ico:'🎮',cov:['assets/poster/game-efratushka.jpg','assets/poster/game-minimarket.jpg','assets/poster/game-honor.jpg'],items:[
  {k:'game',t:'אפרתושקה: מסיבת הקסם',d:'משחק דפדפן צבעוני לילדים, עם עולמות, חברי קסם וחנות כוכבים.',img:'assets/poster/game-efratushka.jpg',u:'https://bensharafi7-sys.github.io/efratushka-game/'},
- {k:'game',t:'מגדל אור, מבית מינימרקט אור',d:'משחקים ממותגים לסופרמרקט שכונתי, בצבעים ובלוגו של העסק.',img:'assets/poster/game-minimarket.jpg',u:'https://bensharafi7-sys.github.io/minimarket-or/'},
- {k:'game',t:'BENJO IN ISTANBUL',d:'משימה 01: דמו של משחק הרפתקאות עם דמות בהשראת בן.',img:'assets/poster/game-honor.jpg',u:'https://bensharafi7-sys.github.io/benjo-honor/'}]},
+ {k:'game',t:'מגדל אור, מבית מינימרקט אור',d:'משחקים ממותגים לסופרמרקט שכונתי, בצבעים ובלוגו של העסק.',img:'assets/poster/game-minimarket.jpg',u:'https://bensharafi7-sys.github.io/minimarket-or/'}]},
 {id:'songs',t:'שירים אישיים',ico:'🎵',cov:[],items:[],soon:true},
 {id:'videos',t:'סרטוני AI',ico:'🎬',cov:['assets/poster/efratushka-clip.jpg','assets/poster/aceaf-trailer-v1.jpg','assets/poster/bedtime-story.jpg'],items:[
  {k:'video',t:'אפרתושקה: קליפ',d:'קליפ אנימציה מלא לדמות אפרתושקה.',f:'efratushka-clip'},
@@ -19,7 +18,7 @@ const F=[
 {id:'chars',t:'דמויות',ico:'✨',cov:['assets/img/efratushka.webp','assets/img/zumi.webp','assets/img/benjo.webp'],items:[
  {k:'pic',t:'אפרתושקה',d:'הדמות הראשית של משחק וקליפ אפרתושקה.',img:'assets/img/efratushka.webp'},
  {k:'pic',t:'זומי בומי',d:'החבר של אפרתושקה על הבמה.',img:'assets/img/zumi.webp'},
- {k:'pic',t:'Benjo',d:'דמות תלת־ממד של בן למשחק BENJO IN ISTANBUL.',img:'assets/img/benjo.webp'},
+ {k:'pic',t:'Benjo',d:'דמות תלת־ממד של בן.',img:'assets/img/benjo.webp'},
  {k:'pic',t:'הסבתא ממגדל אור',d:'דמות מונפשת מהמשחק של מינימרקט אור.',img:'assets/img/granny.webp'}]}];
 const g=document.getElementById('grid');
 F.forEach(f=>{const el=document.createElement('div');el.className='folder';el.tabIndex=0;
