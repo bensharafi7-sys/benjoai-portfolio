@@ -4,11 +4,13 @@ const M='https://bensharafi7-sys.github.io/benjoai-media/';
 const F=[
 {id:'games',t:'משחקים ממותגים',ico:'🎮',cov:['assets/poster/game-efratushka.jpg','assets/poster/game-minimarket.jpg','assets/poster/game-honor.jpg'],items:[
  {k:'game',t:'אפרתושקה: מסיבת הקסם',d:'משחק דפדפן צבעוני לילדים, עם עולמות, חברי קסם וחנות כוכבים.',img:'assets/poster/game-efratushka.jpg',u:'https://bensharafi7-sys.github.io/efratushka-game/'},
- {k:'game',t:'מגדל אור, מבית מינימרקט אור',d:'משחקים ממותגים לסופרמרקט שכונתי, בצבעים ובלוגו של העסק.',img:'assets/poster/game-minimarket.jpg',u:'https://bensharafi7-sys.github.io/minimarket-or/'}]},
+ {k:'game',t:'מגדל אור, מבית מינימרקט אור',d:'משחקים ממותגים לסופרמרקט שכונתי, בצבעים ובלוגו של העסק.',img:'assets/poster/game-minimarket.jpg',u:'https://bensharafi7-sys.github.io/minimarket-or/'},
+ {k:'price',t:'מחירון משחקים לעסקים',d:'בסיס ₪1,200 · דמויות ₪2,200 · פרימיום ₪4,400. מבצע עד 18.10.2026.'}]},
 {id:'songs',t:'שירים אישיים',ico:'🎵',cov:[],items:[],soon:true},
-{id:'videos',t:'סרטוני AI',ico:'🎬',cov:['assets/poster/efratushka-clip.jpg','assets/poster/aceaf-trailer-v1.jpg','assets/poster/bedtime-story.jpg'],items:[
- {k:'video',t:'אפרתושקה: קליפ',d:'קליפ אנימציה מלא לדמות אפרתושקה.',f:'efratushka-clip'},
+{id:'videos',t:'סרטוני AI',ico:'🎬',cov:['assets/poster/medela-he.jpg','assets/poster/aceaf-trailer-v1.jpg','assets/poster/efratushka-clip.jpg'],items:[
+ {k:'video',t:'Medela: פרסומת',d:'סרטון פרסומת למותג Medela.',f:'medela-he'},
  {k:'video',t:'Ace-Af: טריילר',d:'טריילר קולנועי לשיר.',f:'aceaf-trailer-v1'},
+ {k:'video',t:'אפרתושקה: קליפ',d:'קליפ אנימציה מלא לדמות אפרתושקה.',f:'efratushka-clip'},
  {k:'video',t:'סיפור לפני השינה',d:'סרטון רגשי בסגנון קולנועי.',f:'bedtime-story'},
  {k:'video',t:'יום הולדת מסבתא',d:'ברכת יום הולדת מרגשת בסגנון קולנועי.',f:'birthday-grandma'},
  {k:'video',t:'הסיפור של סבתא',d:'סרטון זיכרון אישי.',f:'grandma-story-v2'},
@@ -28,12 +30,13 @@ const io=new IntersectionObserver((es,o)=>es.forEach((e,i)=>{if(e.isIntersecting
 const md=document.getElementById('modal'),gal=document.getElementById('gal');
 function card(it,i){const s=`style="animation-delay:${i*70}ms"`,b=`<div class="body"><h4>${it.t}</h4><p>${it.d}</p>`;
 if(it.k==='game')return `<div class="item" ${s}><a class="thumb" href="${it.u}" target="_blank" rel="noopener"><img src="${it.img}" alt="${it.t}" loading="lazy"><span class="btn gold play">▶ לשחק עכשיו</span></a>${b}</div></div>`;
+if(it.k==='price')return `<div class="item" ${s}>${b}<a class="btn gold wa" target="_blank" rel="noopener">לקבל הצעה בוואטסאפ</a></div></div>`;
 if(it.k==='video')return `<div class="item" ${s}><video controls playsinline preload="none" poster="assets/poster/${it.f}.jpg" src="${M}${it.f}.mp4"></video>${b}</div></div>`;
 if(it.k==='audio')return `<div class="item" ${s}>${b}<audio controls preload="none" src="${it.src}"></audio></div></div>`;
 return `<div class="item" ${s}><img class="pic" src="${it.img}" alt="${it.t}" loading="lazy">${b}</div></div>`}
 function open(f){document.getElementById('mt').textContent=f.ico+' '+f.t;
 gal.innerHTML=f.items.map(card).join('')+(f.soon||!f.items.length?`<div class="soon"><b>בקרוב</b><p>עוד עבודות בדרך לתיקייה הזו.</p></div>`:'');
-md.classList.add('open');md.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';history.pushState({m:1},'','#'+f.id)}
+md.classList.add('open');md.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';gal.querySelectorAll('.wa').forEach(a=>a.href=WA);history.pushState({m:1},'','#'+f.id)}
 function close(){md.classList.remove('open');md.setAttribute('aria-hidden','true');document.body.style.overflow='';gal.querySelectorAll('video,audio').forEach(v=>v.pause())}
 document.getElementById('close').onclick=()=>history.back();md.onclick=e=>e.target===md&&history.back();
 addEventListener('popstate',close);addEventListener('keydown',e=>e.key==='Escape'&&md.classList.contains('open')&&history.back());
